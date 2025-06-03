@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campeones</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+<body>
+
+  <header class="header-banner">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Fan site hecho por y para invocadores. <b>¡GLHF!</b></h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="tierlist.html">Tier List</a></li>
+          <li><a href="campeones.html">Campeones</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 style="margin-top:40px;">Lista de Campeones</h2>
+
+    <!-- Filtros -->
+    <div class="filter-bar">
+      <input type="text" placeholder="Buscar campeón..." id="searchInput">
+      <select id="roleFilter">
+        <option value="">Todos los roles</option>
+        <option value="mid">Mid</option>
+        <option value="jg">Jungla</option>
+        <option value="top">Top</option>
+        <option value="bot">Bot</option>
+        <option value="sup">Soporte</option>
+      </select>
+    </div>
+
+    <!-- Tarjetas de campeones -->
+
+    <!-- Ahri -->
+    <div class="champion-grid">
+      <div class="champion-card" style="background-image: url('../img/champ/ahri.jpg')" data-role="mid">
+        <h3>Ahri</h3>
+        <div class="role"><img src="../img/icons/mid.png" alt="mid"> Mid</div>
+        <div class="subtitle">La zorra de nueve colas</div>
+        <p>Alta movilidad y burst mágico. Ideal para pick-offs rápidos.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/ahri/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-10-arda-c26s-guide-to-warmogs-ahri-must-try-609975" target="_blank"><i class="fa-solid fa-book"></i> Guia</a>
+          <a href="https://www.youtube.com/watch?v=YyUKVjuKSlk&ab_channel=Kraxler" target="_blank"><i class="fa-solid fa-video"></i> Video</a>          
+        </div>
+      </div>
+
+      <!-- Yasuo -->
+      <div class="champion-card" style="background-image: url('../img/champ/yasuo.jpg')" data-role="top mid">
+        <h3>Yasuo</h3>
+        <div class="role"><img src="../img/icons/top.png" alt="top"> Top / Mid</div>
+        <div class="subtitle">El imperdonable</div>
+        <p>Luchador ágil con críticos elevados. Difícil de dominar.</p>
+        <div class="links">          
+          <a href="https://www.leagueoflegends.com/es-es/champions/yasuo/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/champion/yasuo-117" target="_blank"><i class="fa-solid fa-book"></i> Guia</a>
+          <a href="https://www.youtube.com/watch?v=D9V1rk8nVeU&ab_channel=Jonnijuro" target="_blank"><i class="fa-solid fa-video"></i> Video</a>          
+        </div>
+      </div>
+
+      <!-- Jinx -->
+      <div class="champion-card" style="background-image: url('../img/champ/jinx.jpg')" data-role="bot">
+        <h3>Jinx</h3>
+        <div class="role"><img src="../img/icons/bot.png" alt="bot"> Bot</div>
+        <div class="subtitle">La bala perdida</div>
+        <p>Daño en área, gran alcance. Escala fuertemente en late.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/jinx/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/the-comprehensive-guide-to-jinx-492531" target="_blank"><i class="fa-solid fa-book"></i> Guia</a>
+          <a href="https://youtu.be/TxPi7N3lwXs" target="_blank"><i class="fa-solid fa-video"></i> Video</a>          
+        </div>
+      </div>
+
+      <!-- Mordekaiser -->
+      <div class="champion-card" style="background-image: url('../img/champ/mordekaiser.jpg')" data-role="top">
+        <h3>Mordekaiser</h3>
+        <div class="role"><img src="../img/icons/top.png" alt="top"> Top</div>
+        <div class="subtitle">El ascendido de hierro</div>
+        <p>Tanque con gran daño sostenido. Excelente duelista y control de zona con su definitiva.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/mordekaiser/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-11-challenger-mordekaiser-top-guide-632378" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=EQNho4dTkaY" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Teemo -->
+      <div class="champion-card" style="background-image: url('../img/champ/teemo.jpg')" data-role="top">
+        <h3>Teemo</h3>
+        <div class="role"><img src="../img/icons/top.png" alt="top"> Top</div>
+        <div class="subtitle">El explorador veloz</div>
+        <p>Campeón ágil y molesto. Especialista en emboscadas y control de visión con sus trampas.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/teemo/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/the-passionate-guide-to-teemo-456667" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=fXhL_uYHIs4" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Annie -->
+      <div class="champion-card" style="background-image: url('../img/champ/annie.jpg')" data-role="mid">
+        <h3>Annie</h3>
+        <div class="role"><img src="../img/icons/mid.png" alt="mid"> Mid</div>
+        <div class="subtitle">La niña oscura</div>
+        <p>Magia explosiva y control con su aturdimiento. Ideal para iniciarse en la línea central.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/annie/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/s15-rank-1-annie-complete-guide-by-coach-xblademojo-610365" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=fjuih31m8gk&ab_channel=Alexff" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Braum -->
+      <div class="champion-card" style="background-image: url('../img/champ/braum.jpg')" data-role="sup">
+        <h3>Braum</h3>
+        <div class="role"><img src="../img/icons/soporte.png" alt="sup"> Support</div>
+        <div class="subtitle">El corazón de Freljord</div>
+        <p>Soporte defensivo con gran capacidad de protección y control de masas.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/braum/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-10-first-we-fight-then-we-eat-a-comprehensive-braum-guide-628355" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=dDdkrLwUut4" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Darius -->
+      <div class="champion-card" style="background-image: url('../img/champ/darius.jpg')" data-role="top">
+        <h3>Darius</h3>
+        <div class="role"><img src="../img/icons/top.png" alt="top"> Top</div>
+        <div class="subtitle">La mano de Noxus</div>
+        <p>Campeón dominante en línea. Alto daño físico y gran potencial de ejecución.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/darius/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-11-challenger-darius-top-guide-636714" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=n6Q7lxWQ4D0&ab_channel=SirTiki" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Draven -->
+      <div class="champion-card" style="background-image: url('../img/champ/draven.jpg')" data-role="bot">
+        <h3>Draven</h3>
+        <div class="role"><img src="../img/icons/Bot.png" alt="bot"> Bot</div>
+        <div class="subtitle">El glorioso verdugo</div>
+        <p>Alto daño y movilidad. Requiere habilidad para manejar sus hachas giratorias.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/draven/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/season-15-draven-high-elo-guide-570123" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=P5UebMk7GjI&ab_channel=GGodCarry%7CDRAVEN" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Hecarim -->
+      <div class="champion-card" style="background-image: url('../img/champ/hecarim.jpg')" data-role="jg">
+        <h3>Hecarim</h3>
+        <div class="role"><img src="../img/icons/jungla.png" alt="jg"> Jungla</div>
+        <div class="subtitle">La sombra de la guerra</div>
+        <p>Iniciador veloz con gran daño en área. Excelente para emboscadas y peleas en equipo.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/hecarim/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-s1-11-challenger-hecarim-build-guide-by-huncho1v9-636454" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=rIk2d2xEBj4&ab_channel=VonLoL" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Vi -->
+      <div class="champion-card" style="background-image: url('../img/champ/vi.jpg')" data-role="jg">
+        <h3>Vi</h3>
+        <div class="role"><img src="../img/icons/jungla.png" alt="jg"> Jungla</div>
+        <div class="subtitle">La agente de Piltover</div>
+        <p>Luchadora agresiva con gran iniciación. Excelente para emboscadas y control de objetivos.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/vi/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-10-actioners-challenger-vi-jungle-guide-607365" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=G5uXMeGz8N0" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Jax -->
+      <div class="champion-card" style="background-image: url('../img/champ/jax.jpg')" data-role="top">
+        <h3>Jax</h3>
+        <div class="role"><img src="../img/icons/top.png" alt="top"> Top</div>
+        <div class="subtitle">El maestro de armas</div>
+        <p>Duelista con gran escalado. Fuerte en peleas prolongadas y en el juego tardío.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/jax/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-11-thisispatriks-in-depth-jax-guide-503356" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=PNQKADOVFOo&ab_channel=GagoOP" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Lee Sin -->
+      <div class="champion-card" style="background-image: url('../img/champ/lee.jpg')" data-role="jg">
+        <h3>Lee Sin</h3>
+        <div class="role"><img src="../img/icons/jungla.png" alt="jg"> Jungla</div>
+        <div class="subtitle">El monje ciego</div>
+        <p>Alta movilidad y control. Requiere habilidad para maximizar su potencial.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/leesin/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-09-truck-drivers-challenger-lee-sin-guide-rank-1-na-detailed-guide-610673" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=R35m1zIa5i4&ab_channel=VonLoL" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Lux -->
+      <div class="champion-card" style="background-image: url('../img/champ/lux.jpg')" data-role="mid">
+        <h3>Lux</h3>
+        <div class="role"><img src="../img/icons/mid.png" alt="mid"> Mid</div>
+        <div class="subtitle">La dama luminosa</div>
+        <p>Magia de largo alcance y control. Excelente para pokeo y control de masas.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/lux/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/15-3-mid-apc-light-em-up-im-on-fiyaa-luxe-n-style-460573" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=E5Ybrzr-1CA&ab_channel=PochiPoom" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Master Yi -->
+      <div class="champion-card" style="background-image: url('../img/champ/masteryi.jpg')" data-role="jg">
+        <h3>Master Yi</h3>
+        <div class="role"><img src="../img/icons/jungla.png" alt="jg"> Jungla</div>
+        <div class="subtitle">El espadachín Wuju</div>
+        <p>Asesino con gran escalado. Fuerte en el juego tardío y en duelos 1v1.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/masteryi/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/s15-the-fastest-and-best-master-yi-guide-fastest-start-in-june-2025-647390" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=inoyO6O_oHo&ab_channel=Alexff" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Morgana -->
+      <div class="champion-card" style="background-image: url('../img/champ/morgana.jpg')" data-role="sup">
+        <h3>Morgana</h3>
+        <div class="role"><img src="../img/icons/soporte.png" alt="sup"> Soporte</div>
+        <div class="subtitle">El ángel caído</div>
+        <p>Control de masas y escudos. Excelente para proteger aliados y atrapar enemigos.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/morgana/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-10-actioners-challenger-morgana-guide-589276" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=fWeQVzVnVBQ&ab_channel=Alexff" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Nocturne -->
+      <div class="champion-card" style="background-image: url('../img/champ/nocturno.jpg')" data-role="jg">
+        <h3>Nocturne</h3>
+        <div class="role"><img src="../img/icons/jungla.png" alt="jg"> Jungla</div>
+        <div class="subtitle">La pesadilla eterna</div>
+        <p>Asesino con gran movilidad y capacidad de emboscada. Su definitiva puede cambiar el curso de una pelea.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/nocturne/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/1v9-nocturne-build-647486" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=URCzu0N33M8&ab_channel=VonLoL" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Shaco -->
+      <div class="champion-card" style="background-image: url('../img/champ/shaco.jpg')" data-role="jg">
+        <h3>Shaco</h3>
+        <div class="role"><img src="../img/icons/jungla.png" alt="jg"> Jungla</div>
+        <div class="subtitle">El bufón demoníaco</div>
+        <p>Asesino sigiloso y escurridizo. Especialista en emboscadas y engaños.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/shaco/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-11-facets-ultimate-in-depth-ad-shaco-jungle-guide-items-runes-updated-606325" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=y0HtLGUYSsQ&ab_channel=VonLoL" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Sona -->
+      <div class="champion-card" style="background-image: url('../img/champ/sona.jpg')" data-role="sup">
+        <h3>Sona</h3>
+        <div class="role"><img src="../img/icons/soporte.png" alt="sup"> Soporte</div>
+        <div class="subtitle">La virtuosa de las cuerdas</div>
+        <p>Soporte con habilidades de curación y potenciación. Su definitiva puede cambiar el rumbo de una pelea.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/sona/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-07-sona-guide-sona-senninha-support-617052" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=1c60lfUyFr0&ab_channel=Alexff" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Soraka -->
+      <div class="champion-card" style="background-image: url('../img/champ/soraka.jpg')" data-role="sup">
+        <h3>Soraka</h3>
+        <div class="role"><img src="../img/icons/soporte.png" alt="sup"> Soporte</div>
+        <div class="subtitle">La hija de las estrellas</div>
+        <p>Soporte centrado en la curación y protección de aliados. Su definitiva cura a todo el equipo.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/soraka/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-10-actioners-challenger-soraka-guide-638014" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=omMHC5MS3Sw&ab_channel=Alexff" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Twisted Fate -->
+      <div class="champion-card" style="background-image: url('../img/champ/tf.jpg')" data-role="mid">
+        <h3>Twisted Fate</h3>
+        <div class="role"><img src="../img/icons/mid.png" alt="mid"> Mid</div>
+        <div class="subtitle">El maestro de las cartas</div>
+        <p>Controlador de mapa con gran capacidad de emboscada. Su definitiva permite presencia global.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/twistedfate/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-11-victorious-twisted-fate-guide-for-season-15-jammed-642489" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=QPOtllTjB08&ab_channel=LoganKidLeagueOfLegends" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Tristana -->
+      <div class="champion-card" style="background-image: url('../img/champ/tristana.jpg')" data-role="bot">
+        <h3>Tristana</h3>
+        <div class="role"><img src="../img/icons/Bot.png" alt="bot"> Bot</div>
+        <div class="subtitle">La artillera yordle</div>
+        <p>Tiradora explosiva con gran movilidad. Escala fuertemente en el juego tardío.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/tristana/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/vapora-dark-in-depth-Bot-tristana-guide-season-13-447328" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=B_YvPhl1rM4&ab_channel=VonLoL" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Vayne -->
+      <div class="champion-card" style="background-image: url('../img/champ/vayne.jpg')" data-role="bot">
+        <h3>Vayne</h3>
+        <div class="role"><img src="../img/icons/Bot.png" alt="bot"> Bot</div>
+        <div class="subtitle">La cazadora nocturna</div>
+        <p>Tiradora móvil y letal. Especialista en eliminar tanques y escalar en el juego tardío.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/vayne/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-11-vayne-quot-all-shall-tremble-quot-season-15-build-2025-646233" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=agl1v4Qr2xQ&ab_channel=Alexff" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Veigar -->
+      <div class="champion-card" style="background-image: url('../img/champ/veigar.jpg')" data-role="mid">
+        <h3>Veigar</h3>
+        <div class="role"><img src="../img/icons/mid.png" alt="mid"> Mid</div>
+        <div class="subtitle">El pequeño maestro del mal</div>
+        <p>Magia explosiva con escalado infinito. Capaz de eliminar enemigos con una sola habilidad.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/veigar/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/guide-of-an-veigar-otp-star-zall-i-challenger-veigar-otp-1217-lp-peak-i-645348" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=NxP-qkJHF54&ab_channel=Alexff" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- Wukong -->
+      <div class="champion-card" style="background-image: url('../img/champ/wukong.jpg')" data-role="top">
+        <h3>Wukong</h3>
+        <div class="role"><img src="../img/icons/top.png" alt="top"> Top</div>
+        <div class="subtitle">El rey mono</div>
+        <p>Luchador versátil con daño en área y engaños. Excelente iniciador en peleas en equipo.</p>
+        <div class="links">
+          <a href="https://www.leagueoflegends.com/es-es/champions/monkeyking/" target="_blank"><i class="fa-solid fa-id-card"></i> Wiki</a>
+          <a href="https://www.mobafire.com/league-of-legends/build/25-11-monkey-business-in-depth-wukong-guide-top-mid-jungle-601606" target="_blank"><i class="fa-solid fa-book"></i> Guía</a>
+          <a href="https://www.youtube.com/watch?v=pW6Ox3hQouk&ab_channel=VonLoL" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+        </div>
+      </div>
+
+      <!-- add here -->
+
+      
+
+
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 - Proyecto académico sin fines comerciales. Todo el contenido es propiedad de sus respectivos creadores.</p>
+  </footer>
+
+  <!-- Filtros funcionales -->
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const roleFilter = document.getElementById("roleFilter");
+    const cards = document.querySelectorAll(".champion-card");
+
+    function filterChampions() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const selectedRole = roleFilter.value;
+
+      cards.forEach(card => {
+        const name = card.querySelector("h3").textContent.toLowerCase();
+        const role = card.getAttribute("data-role");
+        const matchesSearch = name.includes(searchTerm);
+        const matchesRole = !selectedRole || role.includes(selectedRole);
+        card.style.display = matchesSearch && matchesRole ? "flex" : "none";
+      });
+    }
+
+    searchInput.addEventListener("input", filterChampions);
+    roleFilter.addEventListener("change", filterChampions);
+  </script>
+
+</body>
+</html>
