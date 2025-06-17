@@ -1,0 +1,390 @@
+@use 'variables';
+
+@mixin card-base($bg-color: $color-dark, $text-color: $color-light) {
+  background-color: $bg-color;
+  color: $text-color;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  padding: 10px;
+}
+
+@mixin hover-lift($shadow-color: rgba(226, 183, 20, 0.8)) {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px $shadow-color;
+  }
+}
+
+.news-block {
+  border-bottom: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.champion-grid {
+  margin: auto;
+  width: 90%;
+}
+
+.champion-card {
+  @include card-base(#1f1f1f);
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin: 1%;
+  vertical-align: top;
+  width: 30%;
+
+  .role img {
+    height: 18px;
+    width: 18px;
+    object-fit: contain;
+  }
+}
+
+// Banner carousel cursor behavior
+#banner-carousel {
+  .carousel-inner {
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}
+
+// Tablas
+table {
+  background-color: #1e1e1e;
+  border: 2px solid $color-primary;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px #000;
+  color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 2rem;
+  width: 100%;
+
+  th, td {
+    border-bottom: 1px solid #444;
+    padding: 12px 15px;
+    text-align: left;
+  }
+
+  thead {
+    background-color: #2a2a2a;
+    border-bottom: 2px solid $color-primary;
+    color: $color-primary;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  tbody {
+    tr:hover {
+      background-color: #2e2e2e;
+    }
+
+    tr:nth-child(even) {
+      background-color: #252525;
+    }
+  }
+}
+
+.champion-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+// Tarjeta de campeón refinada y responsive
+.champion-card {
+  background-color: #1f1f1f;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid $color-primary;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  color: #fff;
+  display: flex;
+  flex: 1 1 calc(30% - 20px);
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1%;
+  padding: 14px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  vertical-align: top;
+  max-width: calc(30% - 20px);
+  min-height: 280px;
+  box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0 0 20px rgba(226, 183, 20, 0.8);
+    transform: translateY(-5px);
+  }
+
+  h3,
+  .role,
+  .subtitle,
+  p,
+  .links {
+    margin: 0 0 8px 0;
+    text-shadow: 1px 1px 4px #000;
+  }
+
+  .links {
+    a {
+      color: $color-primary;
+      display: inline-block;
+      font-weight: bold;
+      margin-right: 10px;
+      text-decoration: none;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .role img {
+    height: 18px;
+    width: 18px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .champion-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Estética para búsqueda y filtros */
+
+/* Estilos para la barra de filtros */
+.filter-bar {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 10px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  background-color: #3a3a3a;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  max-width: 100%;
+  padding: 10px 15px;
+  width: 280px;
+}
+
+.filter-bar input::placeholder {
+  color: #bbb;
+}
+
+/* Grid de noticias */
+.noticia-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+}
+
+.noticia-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Tarjeta de noticia */
+.noticia-card {
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  color: #fff;
+  display: flex;
+  flex: 1 1 calc(30% - 20px);
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: calc(30% - 20px);
+  min-height: 280px;
+  padding: 16px;
+  transition: transform 0.3s ease;
+}
+
+.noticia-card:hover {
+  box-shadow: 0 0 16px rgba(255,255,255,0.1);
+  transform: translateY(-5px);
+}
+
+.noticia-card img {
+  border-radius: 6px;
+  height: 140px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.noticia-card h3 {
+  margin: 10px 0 5px;
+}
+
+.noticia-card p {
+  color: #ccc;
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.noticia-card .meta {
+  color: #aaa;
+  font-size: 0.85em;
+  margin-bottom: 8px;
+}
+
+.noticia-card a {
+  color: #e2b714;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .noticia-card {
+    flex: 1 1 100%;
+  max-width: 100%;
+}
+
+}
+
+.tierlist-banner img {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  display: block;
+  height: auto;
+  margin: 20px auto;
+  max-width: 100%;
+  width: auto;
+}
+
+.tierlist-link {
+  background-color: #2b2b2b;
+  border-radius: 6px;
+  color: $color-primary;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: #444;
+  }
+}
+
+.highlight-box {
+  color: white;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.4);
+    opacity: 0.9;
+    z-index: -1;
+  }
+}
+
+// Variante con imagen específica
+.bg::before {
+  background-image: url('../img/bg.jpg');
+}
+
+// Definicion del corousel
+
+@mixin carousel-icon {
+  filter: brightness(0) invert(1);
+  width: 3rem;
+  height: 3rem;
+  background-size: 100% 100%;
+}
+
+#banner-carousel {
+  margin: 0;
+  width: 100%;
+
+  .carousel-inner {
+    max-height: 60vh;
+    overflow: hidden;
+
+    .carousel-item {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: $banner-fit-mode; // <- si preferís que no se recorte nada
+        object-position: center;
+        display: block;
+      }
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    @include carousel-icon;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    background-color: $color-light;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner-carousel {
+    .carousel-inner {
+      max-height: 40vh; // menos altura en móviles
+    }
+
+    .carousel-item img {
+      object-fit: $banner-fit-mode; // prioriza ver toda la imagen
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}

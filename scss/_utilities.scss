@@ -1,0 +1,30 @@
+.btn-warning {
+  background-color: $color-primary;
+  border: none;
+  color: #111;
+
+  &:hover {
+    background-color: #c9a312;
+  }
+}
+
+.btn-outline-light {
+  border-color: #888;
+  color: #eee;
+
+  &:hover {
+    background-color: #444;
+    color: #fff;
+  }
+}
+
+.bg-dark {
+  background-color: #1c1c1c !important;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+  }
+}
