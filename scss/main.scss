@@ -1,7 +1,24 @@
-@import 'variables';
-@import 'mixins';
-@import 'base';
-@import 'layout';
-@import 'components';
-@import 'forms';
-@import 'utilities';
+// abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// base
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+// layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/layout";
+
+// components
+@import "components/buttons";
+@import "components/navbar";
+@import "components/components";
+
+// forms
+@import "forms/forms";
+
+// pages
+@import "pages/home";

@@ -1,0 +1,29 @@
+
+body {
+  background-color: $color-background;
+  color: $color-light;
+  font-family: $font-main;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #1c1c1c,
+    #1c1c1c 10px,
+    #1e1e1e 10px,
+    #1e1e1e 20px
+  );
+  background-size: cover;
+}
+
+main {
+  h1, h2 {
+    color: $color-primary;
+    text-align: center;
+  }
+}
+
+a {
+  color: $color-primary;
+  text-align: center;
+}

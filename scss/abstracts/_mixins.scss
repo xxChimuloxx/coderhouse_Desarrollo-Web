@@ -1,0 +1,15 @@
+@mixin card-base($bg-color: $color-dark, $text-color: $color-light) {
+  background-color: $bg-color;
+  color: $text-color;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  padding: 10px;
+}
+
+@mixin hover-lift($shadow-color: rgba(226, 183, 20, 0.8)) {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px $shadow-color;
+  }
+}

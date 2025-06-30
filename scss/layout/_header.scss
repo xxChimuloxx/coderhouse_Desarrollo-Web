@@ -1,0 +1,29 @@
+// Header
+.header-banner {
+  align-items: center;
+  background-image: url('../img/header-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  color: $color-light;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+}
